@@ -1,5 +1,4 @@
-import Typewriter from 'typewriter-effect';
-import axios from 'axios';
+
 function displayPoem(response) {
     console.log("poem generated");
     new Typewriter("#result", {
