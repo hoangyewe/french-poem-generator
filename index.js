@@ -23,6 +23,6 @@ function generatePoem(event) {
 
 let poemFormElement = document.getElementById("poem-generator");
 poemFormElement.addEventListener('submit', generatePoem);
-let poemElement = document.querySelector("#result");
+let poemElement = document.querySelector("#result hidden");
 poemElement.classList.remove("hidden");
-poemElement.innerHTML = `<div class="blink">Genering a French poem about ${instructionsInput.value}</div>`;
+poemElement.innerHTML = `<div class="blink"> Genering a French poem about ${instructionsInput.value} </div>`;
