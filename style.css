@@ -47,8 +47,7 @@ input {
 
 
 
-#result {
-    display: flex;
+.result {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
@@ -57,4 +56,38 @@ input {
     box-shadow: 0 10px 30px rgba(240, 237, 237, 0.1);
     height: 200px;
     font-size: 1.2rem;
+}
+.form-container {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.hidden {
+ display: none;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5,start) infinite;
+    -webkit-animation: blink-animation 1s steps(5,start) infinite;
+}
+
+@keyframes blink-animation {
+   to {
+    visibility: hidden ;
+   } 
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
