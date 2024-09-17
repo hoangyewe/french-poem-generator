@@ -1,12 +1,12 @@
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 20px; /* Space between input and result */
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
   height: 100vh;
   align-items: center;     
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
   font-family: 'Roboto', sans-serif;
-  padding: 0 10vw; /* Adds some horizontal padding */
+  padding: 0 10vw; 
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    grid-column: span 2; /* Centers heading across both columns */
+    grid-column: span 2; 
 }
 
 input {
@@ -76,7 +76,6 @@ input {
 
 .blink {
     animation: blink-animation 1s steps(5,start) infinite;
-    -webkit-animation: blink-animation 1s steps(5,start) infinite;
 }
 
 @keyframes blink-animation {
@@ -87,6 +86,6 @@ input {
 
 @-webkit-keyframes blink-animation {
     to {
-        visibility: hidden;
+    visibility: hidden;
     }
 }
