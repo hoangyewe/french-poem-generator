@@ -1,4 +1,3 @@
-
 function displayPoem(response) {
     console.log("poem generated");
     new Typewriter("#result", {
@@ -19,10 +18,11 @@ function generatePoem(event) {
     console.log("Generating poem");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);
-    }
+    poemElement.innerHTML = `<div class="blink">Generating a French poem about ${instructionsInput.value}</div>`;
+}
 
 let poemFormElement = document.getElementById("poem-generator");
 poemFormElement.addEventListener('submit', generatePoem);
 let poemElement = document.querySelector("#result");
+
 poemElement.classList.remove("hidden");
-poemElement.innerHTML = `<div class="blink">Genering a French poem about ${instructionsInput.value}</div>`;
