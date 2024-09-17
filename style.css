@@ -71,7 +71,7 @@ input {
     font-size: 12px;
 }
 .hidden {
-    display: hidden;
+    display: none;
 }
 
 .blink {
